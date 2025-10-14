@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>個人名片</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: #f5f7fa;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card {
+            display: flex;
+            width: 500px;
+            height: 250px;
+            background: #fff;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+            border-radius: 24px;
+            overflow: hidden;
+        }
+        .card-left {
+            width: 30%;
+            background: linear-gradient(135deg, #f3a15fd8 0%, #ddcd39 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid #ffffff00;
+            box-shadow: 0 4px 16px rgba(33, 147, 176, 0);
+        }
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        }
+        .card-right {
+            width: 70%;
+            padding: 32px 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .name {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #a55509e0;
+            margin-bottom: 8px;
+        }
+        .title {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 16px;
+        }
+        .info {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-left">
+            <div class="avatar">
+                <img src="pin1.png" alt="個人照片">
+            </div>
+        </div>
+        <div class="card-right">
+            <div class="name">林芩妤</div>
+            <div class="title">藝社系大一</div>
+            <div class="info">
+                電子郵件：s111415031@stu.ntue.edu.tw<br>
+                電話：02-66396688<br>
+                台北市大安區和平東路二段134 號
+            </div>
+        </div>
+    </div>
+</body>
+</html>
